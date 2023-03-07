@@ -89,7 +89,7 @@ seed=42
 def callback(eval_count, param, val,meta):  
     # Overwrites the same line when printing
     counts.append(eval_count)
-    interim_info['counts'].append(eval_counts)
+    interim_info['counts'].append(eval_count)
     values.append(val)
     interim_info['values'].append(val)
     params.append(param)
