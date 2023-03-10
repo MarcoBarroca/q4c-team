@@ -52,7 +52,6 @@ google-api-core==2.11.0
 google-auth==2.16.2
 googleapis-common-protos==1.56.2
 gpustat==1.0.0
-grpcio @ file:///Users/runner/miniforge3/conda-bld/grpc-split_1677499349201/work
 h5py==3.7.0
 hickle==5.0.2
 html5lib==1.1
