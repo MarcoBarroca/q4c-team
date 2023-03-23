@@ -388,9 +388,9 @@ ts_opt=TranspilationOptions(
 )
 
 res_opt=ResilienceOptions(
-    noise_factors=tuple(range(1, 6, 2)),
-    noise_amplifier='LocalFoldingAmplifier',
-    extrapolator='LinearExtrapolator'
+    #noise_factors=tuple(range(1, 6, 2)),
+    noise_amplifier='LocalFoldingAmplifier'
+    #extrapolator='LinearExtrapolator'
 )
 
 ex_opt=ExecutionOptions(
