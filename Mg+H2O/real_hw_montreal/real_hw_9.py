@@ -98,7 +98,7 @@ def callback(eval_count, param, val,meta):
     mean=np.mean(values)
     std=np.std(values)
 
-    write_dict(interim_info,f'../VQE_results/MG+H2O_mont_4qubit_interim_info_{int(distances[0]*10)}')
+    write_dict(interim_info,f'../VQE_results/MG+H2O_mont_4qubit_zne_interim_info_{int(distances[2]*10)}')
     display("Evaluation: {}, Energy: {}, Mean: {}, STD: {}, Metadata: {}".format(eval_count, val,mean,std, meta))
     clear_output(wait=True)
 
@@ -396,10 +396,10 @@ ex_opt=ExecutionOptions(
     shots=1024
 )
 est_options=Options(
-    resilience_level=1,
+    resilience_level=2,
     optimization_level=3,
     execution=ex_opt,
-    #resilience=res_opt,
+    resilience=res_opt,
     #transpilation=ts_opt
 )
 
@@ -426,5 +426,5 @@ vqe_results,vqe_problems,dists=real_solver(distances=[distances[2]],
                                             est_options=est_options,
                                             device='ibmq_montreal'
                                           )
-write_list(vqe_results,f'../VQE_results/MG+H2O_mont_4qubit_vqe_results_{distances[2]}')
-write_list(vqe_problems,f'../VQE_problems/MG+H2O_mont_4qubit_vqe_problems_{distances[2]}')
+write_list(vqe_results,f'../VQE_results/MG+H2O_mont_4qubit_zne_vqe_results_{int(distances[2]*10)}')
+write_list(vqe_problems,f'../VQE_problems/MG+H2O_mont_4qubit_zne_vqe_problems_{int(distances[2]*10)}')
