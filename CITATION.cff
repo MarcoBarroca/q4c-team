@@ -5,7 +5,7 @@ authors:
     given-names: Marco Antonio
 title: "q-ADPAPT_VQE for MOF toy models"
 publisher : GitHub
-journal = GitHub repository
-howpublished = \url{https://github.com/charlespwd/project-title},
-commit = {4f57d6a0e4c030202a07a60bc1bb1ed1544bf679}
+journal : GitHub repository
+howpublished : \url{https://github.com/charlespwd/project-title},
+commit : {4f57d6a0e4c030202a07a60bc1bb1ed1544bf679}
 date-released: 2023-05-11
